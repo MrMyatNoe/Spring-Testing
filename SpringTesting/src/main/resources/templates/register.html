@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" th:href="@{/css/login.css}">
+<script type="text/javascript" src="js/common.js"></script>
+<title>Hello Spring | register</title>
+</head>
+<body>
+<div class="login-page">
+		<div class="form" style="width: 1000px">
+			<div >
+			<h1 style="background: #43A047;" >Welcome to my Software</h1>
+			</div>
+			<form class="login-form" method="POST" th:object="${user}" action="/register">
+				<input type="hidden"  th:field="*{id}" value="*{id}">
+				<input type="text" placeholder="name"th:field="*{name}" value="*{name}"/>
+				 <input type="password" placeholder="password" th:field="*{password}" value="*{password}"/> 
+				 <input type="text" placeholder="email address" th:field="*{email}" value="*{email}" />
+				<button type="submit">create</button>
+				<p class="message">
+					Already registered? <a th:href="@{login}">Sign In</a>
+				</p>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

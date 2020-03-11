@@ -1,0 +1,112 @@
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+.primary-nav {
+	position: fixed;
+	width: 100vw;
+	height: 45px;
+	background-color: black;
+}
+
+.menu {
+	position: fixed;
+	z-index: 1000;
+	margin-left: 2;
+}
+
+.testing {
+	display: inline-block;
+	width: 96%;
+	height: 900px;
+	background-color: beige;
+	color: black;
+	margin-top: 45px;
+	padding: 2%;
+}
+
+.btn-nav {
+  position: absolute;
+  width: 50px;
+  height: 45px;
+  top: 0;
+  left: 0;
+	padding-left: 12px;
+	background-color: black;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.btn-nav .icon {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  top: 20px;
+  background-color: beige;
+}
+.btn-nav .icon:before {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: beige;
+  content: "";
+  top: -10px;
+}
+.btn-nav .icon:after {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: beige;
+  content: "";
+  top: 10px;
+}
+.btn-nav.open .icon {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.btn-nav.open .icon:before {
+  -webkit-transform: rotateZ(-45deg) scaleX(0.75) translate(-10px, -3px);
+          transform: rotateZ(-45deg) scaleX(0.75) translate(-10px, -3px);
+}
+.btn-nav.open .icon:after {
+  -webkit-transform: rotateZ(45deg) scaleX(0.75) translate(-10px, 3px);
+          transform: rotateZ(45deg) scaleX(0.75) translate(-10px, 3px);
+}
+.btn-nav:hover {
+  cursor: pointer;
+}
+
+
+
+
+.navigation-drawer-off {
+	top: 45px;
+	display: block;
+	position: fixed;
+	height: 100vh;
+	width: 200px;
+	background-color: maroon;
+	margin-left: -200px;
+	transition: 300ms;
+	z-index: 1;
+}
+
+.navigation-drawer {
+	top: 45px;
+	display: block;
+	position: fixed;
+	height: 100vh;
+	width: 200px;
+	background-color: maroon;
+	margin-left: 0px;
+	transition: 300ms;
+	z-index: 1;
+}
+
